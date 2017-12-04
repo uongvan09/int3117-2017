@@ -1,5 +1,5 @@
 var delay = 2000;
-describe('Common_TC_G_90', function(){
+describe('Common_TC_G_91', function(){
   it('Đăng nhập bằng tài khoản doctor', function(){
     cy.fixture('users').then((user) =>{
       cy.visit('/signin');
