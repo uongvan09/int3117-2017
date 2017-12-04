@@ -1,11 +1,9 @@
 describe('THEMMOI_BN_95', function(){
   it('Dang nhap', function(){
-    
       cy.visit('/signin')
         .get('input[name=email]').type(user.doctor.email)
         .get('input[name=password]').type(user.doctor.password)
         .get('button[type=submit]').click()
-    
   })
   it('kiểm tra thông tin bắt buộc', function () {
        cy.contains('Quản lý bệnh nhân').click()
@@ -27,7 +25,5 @@ describe('THEMMOI_BN_95', function(){
 	cy.get('div.row:nth-child(4) > div:nth-child(4) > div:nth-child(1) > input:nth-child(2)').type('dhajerkf')
 	cy.get('body > div > div.page-container.ng-scope > div > div.page-content-wrapper > div > div > div > div.col-md-8.padding-left-5 > div > form > div > div.portlet-body > div.general-item-list > div > div > div:nth-child(1) > div > input').type('hgiakrf')
 	cy.contains('Lưu').click()
-	
-
   })
 })
